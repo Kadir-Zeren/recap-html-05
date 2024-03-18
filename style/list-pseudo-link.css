@@ -2,7 +2,7 @@ body {
   font-family: "Quicksand", sans-serif;
 }
 
-ul {
+ul.language {
   font-family: "Bruno Ace SC", sans-serif;
   list-style-type: circle;
   list-style-type: square;
@@ -27,4 +27,63 @@ h2 {
 
 .fa-solid {
   color: red;
+}
+
+ul.pseudo li {
+  background-color: darkgray;
+  font-weight: 700;
+}
+
+ul.pseudo li:first-child {
+  color: blue;
+}
+
+ul.pseudo li:last-child {
+  color: green;
+}
+
+ul.pseudo li:nth-child(5) {
+  color: purple;
+}
+
+ul.pseudo li:nth-child(odd) {
+  color: hotpink;
+  background-color: lightgray;
+}
+
+ul.pseudo li:nth-child(even) {
+  color: lightsalmon;
+}
+
+ul.pseudo li:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+ul.pseudo li:active {
+  background-color: green;
+}
+
+input:focus {
+  background-color: tomato;
+  color: white;
+  border: 4px dotted white;
+  outline: none;
+}
+
+nav.links a:link {
+  color: brown;
+}
+
+nav.links a:visited {
+  color: lightpink;
+}
+
+nav.links a:active {
+  color: magenta;
+}
+
+nav.links a:hover {
+  color: chartreuse;
+  text-decoration: none;
 }
