@@ -73,6 +73,7 @@ input:focus {
 
 nav.links a:link {
   color: brown;
+  text-decoration: none;
 }
 
 nav.links a:visited {
@@ -84,6 +85,37 @@ nav.links a:active {
 }
 
 nav.links a:hover {
-  color: chartreuse;
-  text-decoration: none;
+  color: purple;
+  text-decoration: underline;
+}
+
+.p-elements::first-line {
+  color: red;
+}
+
+.p-elements::first-letter {
+  font-size: 30px;
+}
+
+ul.before-after li::before {
+  content: "👏";
+}
+
+ul.before-after li:nth-child(3)::before {
+  content: "🚘";
+}
+
+ul.before-after li:nth-child(3)::before {
+  content: "🏎️";
+}
+
+ul.before-after li:nth-child(2)::after {
+  content: "Nice Car";
+  font-family: "Font Awsome 6 Free";
+  font-weight: 400;
+  content: "\f53a";
+}
+
+ul.before-after li:nth-child(3):hover::after {
+  content: 🚘;
 }
